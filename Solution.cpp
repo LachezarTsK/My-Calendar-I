@@ -19,6 +19,6 @@ public:
     MyCalendar() = default;
 
     bool book(int start, int end) {
-        return bookedMeetings.emplace(Interval(start, end)).second;
+        return bookedMeetings.emplace(start, end).second;
     }
 };
